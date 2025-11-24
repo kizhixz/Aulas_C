@@ -1,10 +1,23 @@
 /*
 ASSUNTO PRINCIPAL DETECTADO: Ponteiros em C
 Resumo geral do assunto.
-Ponteiros são variáveis que armazenam o endereço de memória de outras variáveis. Eles são fundamentais em C, permitindo a manipulação direta da memória, o que é essencial para tarefas como alocação dinâmica de memória, otimização de passagem de parâmetros (referência) e o entendimento de estruturas de dados como arrays e strings.
+Ponteiros são variáveis que armazenam o endereço de memória de outras variáveis. 
+Eles são fundamentais em C, permitindo a manipulação direta da memória, 
+o que é essencial para tarefas como alocação dinâmica de memória, 
+otimização de passagem de parâmetros (referência) e o 
+entendimento de estruturas de dados como arrays e strings.
 
 Explicação clara e didática.
-Um ponteiro não armazena um valor de dado (como um 'int' ou 'char'), mas sim o local (endereço) onde esse valor está armazenado na memória RAM. Existem dois operadores principais: o operador de endereço '&' (referência), que retorna o endereço de uma variável, e o operador de desreferência '*' (indireção), que acessa o valor armazenado no endereço apontado pelo ponteiro. Esse conceito permite que diferentes partes do programa acessem e modifiquem a mesma informação na memória, proporcionando controle de baixo nível e eficiência.
+Um ponteiro não armazena um valor de dado (como um 'int' ou 'char'), 
+mas sim o local (endereço) onde esse valor está 
+armazenado na memória RAM. 
+Existem dois operadores principais: o operador de endereço '&' (referência), 
+que retorna o endereço de uma variável, 
+e o operador de desreferência '*' (indireção), 
+que acessa o valor armazenado no endereço apontado pelo ponteiro. 
+Esse conceito permite que diferentes partes do programa acessem 
+e modifiquem a mesma informação na memória, proporcionando 
+controle de baixo nível e eficiência.
 
 Contexto sobre o que esse tema significa na Linguagem C (por exemplo, uso de ponteiros, bibliotecas, compilação).
 Ponteiros são o recurso mais poderoso e distintivo de C, sendo a base para grande parte da sua flexibilidade e desempenho. Eles estão intrinsecamente ligados a arrays (onde o nome do array é um ponteiro), strings (que são arrays de char) e, mais tarde, à alocação dinâmica de memória. O formato de impressão '%p' em printf() é usado para exibir endereços de memória. O uso correto de ponteiros é crucial para evitar erros de segmentação e vulnerabilidades de segurança, exigindo familiaridade com a organização dos dados na memória.
