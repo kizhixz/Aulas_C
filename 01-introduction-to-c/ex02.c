@@ -1,3 +1,12 @@
+/*  
+
+Exercício 2: Saída de Texto Simples Modifique o programa do 
+Exercício 1 para usar a função printf() e 
+exibir a seguinte mensagem no terminal:
+
+Estou aprendendo a programar em C.
+
+*/
 
 #include <stdio.h>
 
