@@ -7,10 +7,9 @@ o texto que está entre aspas duplas, como "Olá Mundo"?
 
 #include <stdio.h>
 
-int main(viod){
-    printf("Olá Mundo");
+int main(void){
+    printf("Resposta: String Literal\n");
     return 0;
-
 }
 
 
