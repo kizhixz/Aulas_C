@@ -1,11 +1,38 @@
 /*
 ASSUNTO PRINCIPAL DETECTADO: Variáveis e Tipos de Dados em C
 Resumo geral do assunto.
-Este documento detalha o conceito de tipagem estática em C, as regras de declaração de variáveis e os tipos de dados primitivos. Aborda as categorias de números inteiros (int, char, short, long) e números de ponto flutuante (float, double, long double), incluindo as variações sem sinal (unsigned).
+
+Este documento detalha o conceito de tipagem estática em C, as regras de 
+declaração de variáveis e os tipos de dados primitivos. Aborda as categorias 
+de números inteiros (int, char, short, long) e números de ponto 
+flutuante (float, double, long double), incluindo as variações sem sinal (unsigned).
+
 Explicação clara e didática.
-C é uma linguagem estaticamente tipada, o que significa que o tipo de toda variável deve ser declarado e é conhecido em tempo de compilação. Isso difere de linguagens interpretadas (Python, JavaScript). O texto explica as diferenças de tamanho e alcance (range) dos tipos inteiros e o risco de overflow (exceder o limite do tipo). Em seguida, introduz os tipos flutuantes para números decimais.
-Contexto sobre o que esse tema significa na Linguagem C (por exemplo, uso de ponteiros, bibliotecas, compilação).
-A tipagem estática e o gerenciamento explícito dos tamanhos dos tipos são fundamentais para a performance e o controle de baixo nível do C. O texto demonstra a sintaxe correta para declaração/inicialização de variáveis, o risco de conversão implícita (implicit conversion) e o uso do operador `sizeof()` para determinar o tamanho de um tipo em bytes na arquitetura atual. O perigo de overflow, especialmente com tipos com ou sem sinal, é um conceito central de baixo nível que o programador deve gerenciar.
+
+C é uma linguagem estaticamente tipada, o que significa que o tipo de toda 
+variável deve ser declarado e é conhecido em tempo de compilação. Isso 
+difere de linguagens interpretadas (Python, JavaScript). O texto explica 
+as diferenças de tamanho e alcance (range) dos tipos inteiros e o risco 
+de overflow (exceder o limite do tipo).
+
+Em seguida, introduz os tipos 
+flutuantes para números decimais.
+
+Contexto sobre o que esse tema significa na Linguagem C (por exemplo, 
+uso de ponteiros, bibliotecas, compilação).
+
+A tipagem estática e o gerenciamento explícito dos tamanhos dos tipos 
+são fundamentais para a performance e o controle de baixo nível do C.
+
+O texto demonstra a sintaxe correta para declaração/inicialização de 
+variáveis, o risco de conversão implícita (implicit conversion) e o 
+uso do operador `sizeof()` para determinar o tamanho de um tipo em 
+bytes na arquitetura atual.
+
+O perigo de overflow, especialmente com 
+tipos com ou sem sinal, é um conceito central de baixo nível que o 
+programador deve gerenciar.
+
 */
 
 // ------------------------------------------------------------
