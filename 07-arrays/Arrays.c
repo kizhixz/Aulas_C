@@ -1,13 +1,45 @@
 /*
 ASSUNTO PRINCIPAL DETECTADO: Arrays (Vetores) em C
 Resumo geral do assunto.
-Um array é uma coleção de variáveis do mesmo tipo de dado, armazenadas em locais de memória contíguos. Eles permitem armazenar múltiplos valores sob um único nome de variável, acessados por um índice numérico que começa em 0. Em C, arrays têm um tamanho fixo que deve ser especificado no momento da declaração.
+
+Um array é uma coleção de variáveis do mesmo tipo de dado, 
+armazenadas em locais de memória contíguos.
+
+Eles permitem armazenar múltiplos valores sob um único nome de variável, 
+acessados por um índice numérico que começa em 0. Em C, arrays têm um 
+tamanho fixo que deve ser especificado no momento da declaração.
 
 Explicação clara e didática.
-Arrays são estruturas de dados sequenciais essenciais na Linguagem C para agrupar dados homogêneos (todos do mesmo tipo, como inteiros ou caracteres). A alocação contígua na memória é uma característica importante que permite acesso rápido aos elementos. A manipulação dos arrays é feita através de índices (offset a partir do início), e o nome do array funciona como um ponteiro para o seu primeiro elemento, conectando o conceito de arrays ao de ponteiros.
 
-Contexto sobre o que esse tema significa na Linguagem C (por exemplo, uso de ponteiros, bibliotecas, compilação).
-Em C, arrays são arrays estáticos por padrão (tamanho fixo), ao contrário de muitas linguagens de alto nível. Para simular arrays dinâmicos, é necessário usar outras estruturas ou técnicas de alocação de memória (como malloc/free) e ponteiros. O fato de os elementos serem armazenados em sequência (contiguamente) é crucial para otimizar o desempenho e é uma das razões pelas quais o nome do array é, na verdade, um ponteiro. A biblioteca <stdio.h> é usada aqui para fins de demonstração (printf), mas arrays não exigem bibliotecas específicas para sua definição e uso básico.
+Arrays são estruturas de dados sequenciais essenciais na Linguagem C 
+para agrupar dados homogêneos (todos do mesmo tipo, 
+como inteiros ou caracteres).
+
+A alocação contígua na memória é uma característica importante que 
+permite acesso rápido aos elementos. 
+
+A manipulação dos arrays é feita através de 
+índices (offset a partir do início), e o nome do array funciona 
+como um ponteiro para o seu primeiro elemento, 
+conectando o conceito de arrays ao de ponteiros.
+
+Contexto sobre o que esse tema significa na Linguagem C 
+(por exemplo, uso de ponteiros, bibliotecas, compilação).
+
+Em C, arrays são arrays estáticos por padrão (tamanho fixo), 
+ao contrário de muitas linguagens de alto nível. 
+
+Para simular arrays dinâmicos, é necessário usar outras estruturas ou 
+técnicas de alocação de memória (como malloc/free) e ponteiros. 
+
+O fato de os elementos serem armazenados em sequência (contiguamente) é 
+crucial para otimizar o desempenho e é uma das razões pelas quais o 
+nome do array é, na verdade, um ponteiro. 
+
+A biblioteca <stdio.h> é usada aqui para fins de demonstração (printf), 
+mas arrays não exigem bibliotecas 
+específicas para sua definição e uso básico.
+
 */
 
 #include <stdio.h> // Necessário para a função printf()
@@ -16,27 +48,52 @@ Em C, arrays são arrays estáticos por padrão (tamanho fixo), ao contrário de
 // TEORIA — ASSUNTO PRINCIPAL (Arrays)
 // ------------------------------------------------------------
 // Definição: Um array é uma variável que armazena múltiplos valores.
+
 // Homogeneidade: Todos os valores em um array C devem ser do **mesmo tipo** (ex: int, double).
+
 // Tamanho Fixo: O tamanho do array deve ser **sempre especificado** na definição.
-// - C não fornece arrays dinâmicos nativamente (para isso, são necessárias estruturas como listas vinculadas ou alocação dinâmica).
+
+// - C não fornece arrays dinâmicos nativamente (para isso, são 
+//necessárias estruturas como listas 
+//vinculadas ou alocação dinâmica).
+
 // Inicialização:
 // - Pode ser definida no momento da declaração: int nome[tamanho] = { v1, v2, v3, ... };
 // - Pode ser atribuída elemento por elemento após a declaração.
+
 // Acesso: É feito usando colchetes [] com o **índice** (número inteiro).
+
 // Índices: Os arrays em C são **base 0**, ou seja, o primeiro elemento é o índice 0.
+
 // - Um array com N itens tem índices de 0 a N-1.
+
 // Armazenamento: Os elementos do array são armazenados em **sequência** (contiguamente) na memória.
-// Ponteiros e Array: O **nome da variável do array** (ex: prices) é um **ponteiro** para o primeiro elemento do array (índice 0).
+
+// Ponteiros e Array: O **nome da variável do array** (ex: prices) 
+//é um **ponteiro** para o primeiro elemento do array (índice 0).
+
 //
 // ------------------------------------------------------------
 // TEORIA — CONTEÚDO RELACIONADO PRESENTE NO TEXTO
 // ------------------------------------------------------------
-// - Tipos de Dados: Menciona tipos 'int' e 'double' como exemplos de tipos que podem ser usados em arrays.
-// - Constantes: Uma variável constante (const int SIZE) pode ser usada para definir o tamanho do array, tornando o código mais legível e fácil de manter.
-// - Laços (`for`): Arrays são frequentemente manipulados e inicializados usando laços, que automatizam o acesso sequencial aos índices.
-// - Laços (`for`) e Índices: O laço 'for' (for (int i = 0; i < 5; i++)) é ideal para percorrer um array de 5 elementos (índices 0 a 4).
-// - Listas Vinculadas (Estruturas de Dados): Mencionadas como uma alternativa para arrays dinâmicos.
-// - Ponteiros: Menciona que o nome do array é um ponteiro para o primeiro elemento e que este assunto será detalhado posteriormente.
+// - Tipos de Dados: Menciona tipos 'int' e 'double' como exemplos 
+//de tipos que podem ser usados em arrays.
+
+// - Constantes: Uma variável constante (const int SIZE) 
+//pode ser usada para definir o tamanho do array, 
+//tornando o código mais legível e fácil de manter.
+
+// - Laços (`for`): Arrays são frequentemente manipulados e inicializados 
+//usando laços, que automatizam o acesso sequencial aos índices.
+
+// - Laços (`for`) e Índices: O laço 'for' (for (int i = 0; i < 5; i++)) é ideal 
+//para percorrer um array de 5 elementos (índices 0 a 4).
+
+// - Listas Vinculadas (Estruturas de Dados): Mencionadas 
+//como uma alternativa para arrays dinâmicos.
+
+// - Ponteiros: Menciona que o nome do array é um ponteiro para o 
+//primeiro elemento e que este assunto será detalhado posteriormente.
 
 // Exemplo 1: Definição, Inicialização e Acesso a um Array
 // Demonstra a sintaxe básica de definição e acesso.
